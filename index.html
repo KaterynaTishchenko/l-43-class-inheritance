@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Все у console!</h1>
+  <p>Базовий рівень:<br>
+
+    Реалізуй клас User. Під час створення екземпляру на базі цього класу, обʼєкт повинен мати вигляд {name: ‘Petro’, role: ‘admin’} (role може бути або admin або user). У разі невірно переданих даних такого об’єкта — попереджати за допомогою alert-у відповідне поле, яке введено некоректно. У класі User повинні бути такі компоненти: 
+    <ul>
+    
+    <li>getName</li>
+    <li>getRole</li>
+    <li>login</li>
+    <li>logout</li>
+    <li>сhangeName</li>
+    <li>changePassword</li>
+   </ul>
+    У класі Admin повинні бути такі компоненти:
+    <ul>
+    <li>addUser</li>
+    <li>removeUser</li>
+    <li>changeUserRole</li>
+    <li>getAllUsers</li>
+    <li>removeAllUsers</li>
+    </ul>
+</p>
+
+  <hr>
+  <h2>Додатковий тренінг</h2>
+  <table id="user-list">
+    <thead>
+      <tr>
+        <th>Ім'я</th>
+        <th>Роль</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  
+  <label for="name">Ім'я користувача:</label>
+  <input type="text" id="name">
+  
+  <label for="role">Роль користувача:</label>
+  <select id="role">
+    <option value="user">Звичайний користувач</option>
+    <option value="admin">Адміністратор</option>
+  </select>
+  
+  <button id="add-user">Додати користувача</button>
+  <script src="script.js"></script>
+</body>
+
+</html>
